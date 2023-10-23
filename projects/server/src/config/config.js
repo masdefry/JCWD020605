@@ -1,5 +1,7 @@
-require("dotenv").config();
-
+const path = require('path');
+require('dotenv').config({
+  path: path.resolve('config.env'),
+});
 const { db_username, db_password, db_database, db_host, db_dialect } =
   process.env;
 
