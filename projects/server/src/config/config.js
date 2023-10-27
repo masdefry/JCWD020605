@@ -7,17 +7,17 @@ const { db_username, db_password, db_database, db_host, db_dialect } =
 
 module.exports = {
   development: {
-    username: db_username,
-    password: db_password,
-    database: db_database,
-    host: db_host,
-    dialect: db_dialect,
+    username: process.env.db_username,
+    password: process.env.db_password,
+    database: process.env.db_database,
+    host: process.env.db_host,
+    dialect: process.env.db_dialect,
   },
   production: {
-    username: db_username,
-    password: db_password,
-    database: db_database,
-    host: db_host,
-    dialect: db_dialect,
+    username: process.env.db_username,
+    password: process.env.db_password,
+    database: process.env.db_database,
+    host: process.env.db_host,
+    dialect: process.env.db_dialect,
   },
 };
